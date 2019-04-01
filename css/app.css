@@ -1,0 +1,576 @@
+.wood-logo {
+	position: relative;
+	color: #ffffff;
+	font-size: 1.7rem;
+	letter-spacing: .3em;
+}
+
+.wood-logo::before {
+	content: '';
+	position: absolute;
+	top: .65em;
+	right: 3.8em;
+	width: 1.7em;
+	height: .1em;
+	background-color: #cc9966;
+}
+
+.thumbnail {
+	position: relative;
+	border-radius: 50%;
+}
+
+.wood-header__text--vertical {
+	font-size: .6rem;
+	letter-spacing: .3em;
+	transform: rotate(90deg);
+	color: rgba(255,255,255,.4);
+}
+
+.wood-more-button {
+	position: relative;
+}
+
+.wood-more-button::before {
+	content: '';
+	position: absolute;
+	bottom: .5em;
+	width: 2.9em;
+	height: 2px;
+	background-color: #cc9966;
+}
+
+.wood-more-button::after {
+	content: url("../img/arrow.svg");
+}
+
+.wood-heading__line--left, .wood-paragraph__line--left, .wood-paragraph__line--vertical {
+	position: relative;
+}
+
+.wood-heading__line--left::before {
+	content: '';
+	position: absolute;
+	top: .5em;
+	left: -3.5em;
+	width: 2.9em;
+	height: 1px;
+	background-color: #000000;
+}
+
+.wood-line-left--white::before {
+	content: '';
+	position: absolute;
+	top: .5em;
+	left: -3.5em;
+	width: 2.9em;
+	height: 1px;
+	background-color: #ffffff;
+}
+
+.wood-paragraph__line--left::before {
+	content: '';
+	position: absolute;
+	top: .5em;
+	left: -3.2rem;
+	width: 2.9em;
+	height: 2px;
+	background-color: #cc9966;
+}
+
+.wood-paragraph__line--vertical::after {
+	content: '';
+	position: absolute;
+	top: 4em;
+	width: 1em;
+	height: 2px;
+	transform: rotate(90deg);
+	background-color: #cc9966;
+}
+
+.wood__image--shadow {
+-webkit-box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.5);
+}
+
+.wood-header {
+	position: relative;
+	margin-bottom: 17%;
+}
+
+.wood-header::after {
+	content: url('../img/icon.png');
+	position: absolute;
+	right: 2%;
+	bottom: -27%;
+}
+
+/*НАВІГАЦІЯ*/
+.wood-header__logo {
+	margin-top: .9rem;
+	padding-right: 1rem;
+}
+
+.wood-header__nav {
+	position: relative;
+}
+
+.wood-header__menu {
+	margin-top: 1rem;
+	color: #ffffff;
+	font-size: .65rem;
+}
+
+.wood-menu__item {
+	margin-left: 1rem;
+	color: #ffffff;
+}
+
+.wood-header__lang {
+	position: absolute;
+	top: .9rem;
+	right: .8rem;
+	font-size: .6rem;
+}
+
+.wood-header__lang--current {
+	color: #ffffff;
+}
+/*КІНЕЦЬ НАВІГАЦІЇ/
+
+/*СЛАЙДЕР*/
+.wood-header__slider {
+	display: flex;
+	position: absolute;
+	z-index: -1;
+	height: 117vh;
+	text-align: center;
+}
+
+.wood-slider__item {
+	position: relative;
+}
+
+.wood-slider__item::before {
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.wood-slider__item--first {
+	height: 96%;
+}
+
+@media print, screen and (min-width: 40em) {
+	.wood-slider__item--first {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 54%;
+        -ms-flex: 0 0 54%;
+            flex: 0 0 54%;
+    max-width: 54%; }
+}
+
+.wood-slider__item--second {
+	height: 100%;
+}
+
+@media print, screen and (min-width: 40em) {
+	.wood-slider__item--second {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 46%;
+        -ms-flex: 0 0 46%;
+            flex: 0 0 46%;
+    max-width: 46%; }
+}
+
+.wood-slider__image {
+	height: 100%;
+	width: 100%;
+}
+/*КІНЕЦЬ СЛАЙДЕРУ*/
+
+/*КОНТЕНТ ХЕДЕРУ*/
+.wood-header__container {
+	margin-top: 13%;
+	color: #ffffff;
+	/*padding: 0 6rem;*/
+}
+
+.wood-header__content {
+	padding-left: 2rem;
+}
+
+.wood-header__content--heading {
+	color: #cc9966;
+	font-size: 4.5rem;
+	letter-spacing: .17em;
+}
+
+.wood-header__content--button {
+	margin-bottom: 3rem;
+}
+
+.wood-header__content--button::after {
+	content: url("../img/arrow-white.svg");
+}
+
+.wood-slider__toggle--name {
+	display: inline-block;
+	position: relative;
+	right: .45em;
+	bottom: .75em;
+	font-size: 2.5em;
+	transform: rotate(90deg);
+	color: #cc9966;
+}
+
+.wood-slider__toggle--name::before {
+	content: '';
+	position: absolute;
+	top: .7em;
+	left: -1.2em;
+	width: 1em;
+	height: 3px;
+	background-color: #cc9966;
+}
+
+.wood-slider__toggle {
+	position: relative;
+}
+
+.wood-toggle__item {
+	display: block;
+	margin: .8em 0;
+}
+
+.wood-toggle__item::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: .5em;
+	height: .5em;
+	border-radius: 50%;
+	background-color: rgba(204,153,102,.3);
+}
+
+.wood-toggle__item:hover::before {
+    content: '';
+	position: absolute;
+	left: 0;
+	width: .5em;
+	height: .5em;
+	border-radius: 50%;
+	background-color: rgb(204,153,102);
+}
+
+.wood-header__scroll {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	min-height: 9rem;
+	margin-left: .2em;
+}
+
+.wood-header__scroll--image {
+	position: relative;
+}
+
+.wood-header__scroll--image::after {
+	content: url("../img/arrow-white.svg");
+	position: absolute;
+	transform: rotate(90deg);
+}
+
+.wood-header__scroll--text {
+	position: relative;
+	margin-left: -2.2em;
+}
+
+.wood-desc__text {
+	position: relative;
+	min-width: 100%;
+	word-spacing: 3em;
+	color: rgba(204,153,102,.4);
+}
+
+.wood-desc__text::after {
+	content: '';
+	position: absolute;
+	top: .5em;
+	right: -125%;
+	width: 5em;
+	height: 3px;
+	background-color: #cc9966;
+}
+
+/*КІНЕЦЬ КОНТЕНТУ ХЕДЕРУ*/
+
+/*СЕКЦІЯ SERVICES*/
+.wood-main__services {
+	margin-bottom: 3%;
+}
+
+.wood-services {
+	margin-bottom: 10.5%;
+}
+
+/*FURNITURE*/
+.wood-services__furniture {
+	position: relative;
+	margin-bottom: 13%;
+}
+
+@media print, screen and (min-width: 64rem) {
+	.wood-services__furniture::before {
+		content: 'F';
+		position: absolute;
+		top: -1em;
+		font-size: 17rem;
+		color: rgba(204,153,102,.1);
+	}
+	.wood-services__furniture::after {
+		content: 'FURNITURE';
+		position: absolute;
+		top: .8em;
+		right: -4em;
+		font-size: 6rem;
+		color: rgba(204,153,102,.1);
+	}
+}
+
+.wood-furniture__content {
+	margin:0 10% 0 15%;
+}
+
+.wood-furniture__heading {
+	position: relative;
+}
+
+.wood-furniture__text {
+	position: relative;
+}
+
+.wood-furniture__button {
+	padding-left: 0;
+}
+
+.wood-service__number {
+	display: block;
+	font-size: 1.7rem;
+}
+/*КІНЕЦЬ FURNITURE*/
+
+/*DECOR*/
+.wood-decor__content {
+	padding-right: 7%;
+	margin-right: 7%;
+}
+
+.wood-services__decor {
+	position: relative;
+}
+
+@media print, screen and (min-width: 64rem) {
+	.wood-services__decor::before {
+		content: 'DECOR';
+		position: absolute;
+		top: .4em;
+		left: -2.3em;
+		font-size: 7rem;
+		color: rgba(204,153,102,.1);
+	}
+	.wood-services__decor::after {
+		content: 'D';
+		position: absolute;
+		top: -1em;
+		right: -.1em;
+		font-size: 17rem;
+		color: rgba(204,153,102,.1);
+	}
+}
+/*КІНЕЦЬ DECOR*/
+/*КІНЕЦЬ SERVICES*/
+
+/*VALUES*/
+.wood-main__values {
+	margin-bottom: 5%;
+}
+
+.wood-values__heading {
+	position: relative;
+	padding-bottom: 2%;
+	letter-spacing: .1em;
+}
+
+.wood-values__heading::after {
+	content: '';
+	position: absolute;
+	top: 1.5em;
+	right: 49%;
+	width: .8em;
+	height: 3px;
+	background-color: #cc9966;
+}
+
+.wood-values__text {
+	margin-bottom: 6%;
+}
+
+.wood-values__list {
+	list-style: none;
+}
+
+.wood-values__list-img {
+	border-radius: 50%;
+}
+
+.wood-list-item__ref {
+	position: relative;
+}
+
+.wood-list-item__ref::after {
+	content: url('../img/play-button.png');
+	position: absolute;
+	top: 36%;
+	right: 35%;
+}
+
+.wood-list-item__ref:hover::after {
+	content: url('../img/play-button.png');
+	position: absolute;
+	top: 36%;
+	right: 35%;
+	transform: scale(1.2);
+	-webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+/*КІНЕЦЬ VALUES*/
+
+/*СЕКЦІЯ VIDEO*/
+.wood-main__video {
+	position: relative;
+	min-height: 100vh;
+	padding: 5% 10%;
+	margin-bottom: 7.7%;
+	background-color: rgba(0,0,0,0.7);
+	background-image: url("../img/woods-bg.jpg");
+	background-size: cover;
+	color: #ffffff;
+}
+
+.wood-main__video::before {
+	content: url("../img/video-bg.png");
+	position: absolute;
+	top: 7%;
+	right: 7%;
+}
+
+.wood-video__wrapper {
+	border: 1px solid #cc9966;
+	position: relative;
+}
+
+@media print, screen and (min-width: 40em) {
+.wood-video__wrapper::after {
+	content: '';
+	position: absolute;
+	width: 10%;
+	height: 1px;
+	right: 3%;
+	top: 50%;
+	transform: rotate(90deg);
+	background-color: #ffffff;
+	}
+}
+
+@media print, screen and (min-width: 40em) {
+	.wood-video__container {
+		min-height: 32em;
+	}
+}
+
+.wood-video__heading {
+	position: relative;
+	margin-bottom: 1em;
+}
+
+.wood-video__subheader {
+	color: #ffffff;
+	margin-bottom: 5em;
+}
+.wood-video__button {
+	position: relative;
+}
+
+.wood-video__button::before {
+	content: url('../img/player-icon.png');
+	position: absolute;
+	top: .8em;
+	left: 3em;
+}
+/*КІНЕЦЬ VIDEO*/
+
+/*ABOUT*/
+.wood-main__about {
+	position: relative;
+	margin-bottom: 4%;
+}
+
+@media print, screen and (min-width: 64rem) {
+	.wood-main__about::before {
+		content: 'ABOUT';
+		position: absolute;
+		top: .7em;
+		left: -.3em;
+		font-size: 7rem;
+		color: rgba(204,153,102,.1);
+	}
+	.wood-main__about::after {
+		content: 'A';
+		position: absolute;
+		z-index: -1;
+		top: -1.2em;
+		right: .7em;
+		font-size: 17rem;
+		color: rgba(204,153,102,.1);
+	}
+}
+/*КІНЕЦЬ ABOUT*/
+
+/*FOOTER*/
+.wood-footer {
+	min-height: 3.125rem;
+	background-color: rgba(0,0,0,0.7);
+	background-image: url("../img/footer-bg.jpg");
+	background-size: cover;
+	color: #ffffff;
+}
+
+.wood-footer__logo {
+	position: relative;
+	color: #ffffff;
+	font-size: 1.4rem;
+	letter-spacing: .3em;
+}
+
+.wood-footer__logo::before {
+	content: '';
+	position: absolute;
+	top: .55em;
+	right: 3.2em;
+	width: 1.7em;
+	height: .1em;
+	background-color: #cc9966;
+}
+
+.wood-footer__container {
+	font-size: .7rem;
+	color: rgba(255,255,255,.5);
+}
+
+/*КІНЕЦЬ FOOTER*/

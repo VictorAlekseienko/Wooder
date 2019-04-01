@@ -7,162 +7,283 @@
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/fonts.css">
   </head>
   <body>
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <h1>Welcome to Foundation</h1>
+    <!-- HEADER -->
+    <header class="wood-header">
+
+      <!-- КАРТИНКИ МОЖУТЬ БУТИ СЛАЙДЕРОМ, ТОМУ ЗРОБИВ СПИСКОМ -->
+      <ul class="wood-header__slider no-bullet">
+        <li class="small-12 wood-slider__item wood-slider__item--first">
+          <img src="img/header-img-1.jpg" alt="Wood image" class="wood-slider__image">
+        </li>
+        <li class="show-for-medium wood-slider__item wood-slider__item--second">
+          <img src="img/header-img-2.jpg" alt="Wood-picture" class="wood-slider__image">
+        </li>
+      </ul>
+      <!-- КІНЕЦЬ СЛАЙДЕРУ -->
+
+      <!-- НАВІГАЦІЯ ПО САЙТУ -->
+      <nav class="row wood-header__nav" role="navigation">
+        <a href="#" class="medium-6 text-right wood-header__logo wood-logo">
+          wooder
+        </a>
+        <ul class="medium-5 menu row wood-header__menu text-center">
+          <li class="large-4">
+            <a href="#" class="wood-menu__item wood-menu__item--current">
+              home
+            </a>
+          </li>
+          <li class="large-4">
+            <a href="#" class="wood-menu__item">
+              products
+            </a>
+          </li>
+          <li class="large-4">
+            <a href="#" class="wood-menu__item">
+              about
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="dropdown menu wood-header__lang show-for-large" data-dropdown-menu>
+          <li>
+            <a href="#" class="wood-header__lang--current">
+              en
+            </a>
+            <ul class="menu">
+              <a href="#">
+                ua
+              </a>
+              <a href="#">
+                fr
+              </a>
+            </ul>
+          </li>
+        </ul>
+      <!-- КІНЕЦЬ НАВІГАЦІЇ -->
+
+      <!-- КОНТЕНТ HEADER -->
+      <div class="row align-middle wood-header__container">
+        <div class="show-for-medium medium-3">
+          <span class="wood-slider__toggle--name">
+            01
+          </span>
+          <ul class="wood-slider__toggle no-bullet">
+            <li>
+              <a class="wood-toggle__item wood-toggle__item--current" href="#">
+                <span class="invisible">
+                First-slide
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="wood-toggle__item" href="#">
+                <span class="invisible">
+                Second-slide
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="wood-toggle__item" href="#">
+                <span class="invisible">
+                Third-slide
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="wood-toggle__item" href="#">
+                <span class="invisible">
+                Fourth-slide
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="small-12 medium-6 wood-header__content">
+          <h1 class="wood-header__content--heading">
+            wooder
+          </h1>
+          <a class="button hollow small-only-expanded wood-header__content--button" href="#">
+            learn more
+          </a>
+          <div class="wood-header__scroll show-for-large">
+            <img class="wood-header__scroll--image" src="img/mouse.png" alt="Mouse">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12.5" height="45.5">
+              <path stroke="#FFF" fill="none" d="M5.5 74.5h1V.5h-1v74z"/>
+              <path stroke="#FFF" fill="none" d="M11.5 39.3L6 44.5.5 39.3"/>
+            </svg>
+            <span class="wood-header__scroll--text wood-header__text--vertical">
+              scroll
+            </span>
+          </div>
+        </div>
+        <div class="wood-header__desc large-3">
+          <p class="show-for-large large-offset-6 wood-desc__text wood-header__text--vertical">
+            furniture & decor
+          </p>
         </div>
       </div>
+      <!-- КІНЕЦЬ КОНТЕНТУ HEADER -->
 
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <div class="callout">
-            <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-            <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-            <p>Once you've exhausted the fun in this document, you should check out:</p>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-              </div>
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-              </div>
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowledge.</p>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 medium-push-2 cell">
-                <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-              </div>
-              <div class="large-4 medium-4 medium-pull-2 cell">
-                <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-              </div>
+    </header>
+    <!-- КІНЕЦЬ HEADER -->
+    
+    <!-- MAIN -->
+    <main>
+
+      <section class="column wood-main__services">
+        <!-- FURNITURE -->
+        <div class="row align-middle wood-services__furniture">
+          <div class="large-offset-1 large-3 wood-furniture__content">
+            <h2 class="wood-furniture__heading wood-heading__line--left">
+              furniture
+            </h2>
+            <p class="wood-furniture__text subheader wood-paragraph__line--left">
+              Wooder utilizes materials otherwise left behind, rendered useless in their original intent. By creating new pieces made of reclaimed barnwood
+            </p>
+            <a href="#" class="button hollow primary wood-more-button wood-furniture__button">
+              learn more
+            </a>
+          </div>
+          <div class="large-6">
+            <img class="wood__image--shadow" src="img/furniture.jpg" alt="Furniture">
+          </div>
+          <span class="wood-service__number wood-paragraph__line--vertical">
+              01.
+          </span>
+        </div>
+        <!-- КІНЕЦЬ FURNITURE -->
+        
+        <!-- DECOR -->
+        <div class="row text-right align-middle wood-services wood-services__decor">
+          <div class="large-6">
+            <img class="wood__image--shadow" src="img/decor.jpg" alt="Decor">
+          </div>
+          <div class="large-4 large-offset-1 text-right wood-decor__content">
+            <h2 class="wood-decor__heading">
+              decor
+            </h2>
+            <p class="wood-decor__text subheader ">
+              Wooder utilizes materials otherwise left behind, rendered useless in their original intent. By creating new pieces made of reclaimed barnwood
+            </p>
+            <a href="#" class="button hollow primary wood-more-button">
+              learn more
+            </a>
+          </div>
+          <span class="large-12 wood-service__number wood-furniture__decor--number wood-paragraph__line--vertical">
+              02.
+          </span>
+        </div>
+        <!-- КІНЕЦЬ DECOR -->
+      </section>
+
+      <!-- СЕКЦІЯ VALUES -->
+      <section class="row wood-main__values align-center text-center">
+        <h3 class="small-10 wood-values__heading" >
+          wooder - is quality
+        </h3>
+        <p class="subheader small-8 medium-6 wood-values__text" >
+          We create unique design objects made of rare wood, specially under the order. Look at the short video about our work.
+        </p>
+        <ul class="row small-10 large-11 align-spaced text-center wood-values__list">
+          <li class="small-10 medium-4 wood-values__list-item">
+            <a class="thumbnail wood-list-item__ref" href="https://www.youtube.com/watch?v=H7KTRpmeTdM" target="blank">
+              <img class="wood-values__list-img" src="img/value-1.png" alt="innovative design">
+            </a>
+            <h6>
+              innovative design
+            </h6>
+          </li>
+          <li class="small-10 medium-4 wood-values__list-item">
+            <a class="thumbnail wood-list-item__ref" href="https://www.youtube.com/watch?v=Zo8ncK_5kzc&list=RDZo8ncK_5kzc&start_radio=1" target="blank">
+              <img class="wood-values__list-img" src="img/value-2.png" alt="high-level skills">
+            </a>
+            <h6>
+              high-level skills
+            </h6>
+          </li>
+          <li class="small-10 medium-4 wood-values__list-item">
+            <a class="thumbnail wood-list-item__ref" href="https://www.youtube.com/watch?v=ZUpxniZBb5s" target="blank">
+              <img class="wood-values__list-img" src="img/value-3.png" alt="quality products">
+            </a>
+            <h6>
+              quality products
+            </h6>
+          </li>
+        </ul>
+      </section>
+      <!-- КІНЕЦЬ VALUES -->
+
+      <!-- СЕКЦІЯ VIDEO -->
+      <section class="wood-main__video">
+        <div class="wood-video__wrapper">
+          <div class="row wood-video__container align-middle">
+            <div class="small-10 medium-offset-2 medium-6">
+              <h3 class="wood-video__heading wood-line-left--white">
+                we do the design of any complexity
+              </h3>
+              <p class="small-10 medium-8 subheader wood-video__subheader wood-paragraph__line--left">
+                This is a team of professionals that make the furniture and wood décor high standard. Creating modern designs. Adhering to the global quality standards. And we are doing work with love.
+              </p>
+              <a href="https://foundation.zurb.com/sites/docs/button.html" class="button hollow wood-video__button" target="blank">
+                watch video
+              </a>
             </div>
           </div>
+        </div> 
+      </section>
+      <!-- КІНЕЦЬ VIDEO -->
+
+      <!-- ABOUT -->
+      <section class="wood-main__about">
+        <div class="row align-middle wood-about__container">
+          <div class="small-10 medium-offset-1 medium-6">
+            <img class="wood__image--shadow" src="img/about-us.jpg" alt="About-us" class="wood-about__image">
+          </div>
+          <div class="medium-4 medium-offset-1">
+            <h3 class="wood-heading__line--left">
+              about us
+            </h3>
+            <p class="subheader wood-paragraph__line--left">
+              We are a team of professionals in the wood processing and the creation of wooden furniture of the highest class
+            </p>
+            <a href="#" class="button hollow primary wood-more-button">
+              learn more
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- КІНЕЦЬ ABOUT -->
+    </main>
+    <!-- КІНЕЦЬ MAIN -->
+
+    <!-- FOOTER -->
+    <footer class="wood-footer">
+      <div class="row wood-footer__container align-spaced align-middle">
+        <div class="show-for-medium medium-4 text-left">
+          &copy;
+          <span>
+            2016 wooder
+          </span>
+        </div>
+        <div class="small-10 medium-4 text-center">
+          <a href="#" class="wood-logo wood-footer__logo">
+            wooder
+          </a>
+        </div>
+        <div class="show-for-medium medium-4 text-right">
+          <span>
+            designed by
+            <a href="#">
+              Viacheslav Olianyshyn
+            </a>
+          </span>
         </div>
       </div>
-
-      <div class="grid-x grid-padding-x">
-        <div class="large-8 medium-8 cell">
-          <h5>Here&rsquo;s your basic grid:</h5>
-          <!-- Grid Example -->
-
-          <div class="grid-x grid-padding-x">
-            <div class="large-12 cell">
-              <div class="primary callout">
-                <p><strong>This is a twelve cell section in a grid-x.</strong> Each of these includes a div.callout element so you can see where the cell are - it's not required at all for the grid.</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-          </div>
-
-          <hr />
-
-          <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-          <form>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-12.cell" />
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <div class="grid-x">
-                  <label>Input Label</label>
-                  <div class="input-group">
-                    <input type="text" placeholder="small-9.cell" class="input-group-field" />
-                    <span class="input-group-label">.com</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Select Box</label>
-                <select>
-                  <option value="husker">Husker</option>
-                  <option value="starbuck">Starbuck</option>
-                  <option value="hotdog">Hot Dog</option>
-                  <option value="apollo">Apollo</option>
-                </select>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-6 medium-6 cell">
-                <label>Choose Your Favorite</label>
-                <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-                <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-              </div>
-              <div class="large-6 medium-6 cell">
-                <label>Check these out</label>
-                <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Textarea Label</label>
-                <textarea placeholder="small-12.cell"></textarea>
-              </div>
-            </div>
-          </form>
-        </div>
-
-        <div class="large-4 medium-4 cell">
-          <h5>Try one of these buttons:</h5>
-          <p><a href="#" class="button">Simple Button</a><br/>
-          <a href="#" class="success button">Success Btn</a><br/>
-          <a href="#" class="alert button">Alert Btn</a><br/>
-          <a href="#" class="secondary button">Secondary Btn</a></p>
-          <div class="callout">
-            <h5>So many components, girl!</h5>
-            <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-            <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    </footer>
+    <!-- КІНЕЦЬ FOOTER -->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>

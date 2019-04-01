@@ -17,7 +17,8 @@ html {
   -webkit-text-size-adjust: 100%; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  text-transform: uppercase; }
 
 h1 {
   font-size: 2em;
@@ -30,7 +31,7 @@ hr {
   overflow: visible; }
 
 pre {
-  font-family: monospace, monospace;
+  font-family: "proximaNova", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em; }
 
 a {
@@ -49,7 +50,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
+  font-family: "proximaNova", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em; }
 
 small {
@@ -177,7 +178,7 @@ body {
   margin: 0;
   padding: 0;
   background: #fefefe;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "proximaNova", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -287,7 +288,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "proximaNova", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   color: inherit;
@@ -335,15 +336,17 @@ h6, .h6 {
   font-size: 1rem;
   line-height: 1.4;
   margin-top: 0;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem;
+  text-transform: capitalize; }
 
 @media print, screen and (min-width: 40em) {
   h1, .h1 {
     font-size: 3rem; }
   h2, .h2 {
-    font-size: 2.5rem; }
+    font-size: 2.3rem;
+    letter-spacing: .05em }
   h3, .h3 {
-    font-size: 1.9375rem; }
+    font-size: 2rem; }
   h4, .h4 {
     font-size: 1.5625rem; }
   h5, .h5 {
@@ -357,7 +360,7 @@ a {
   text-decoration: none;
   cursor: pointer; }
   a:hover, a:focus {
-    color: black; }
+    color: #cc9966; }
   a img {
     border: 0; }
 
@@ -425,7 +428,7 @@ code {
   padding: 0.125rem 0.3125rem 0.0625rem;
   border: 1px solid #cacaca;
   background-color: #e6e6e6;
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-family: "proximaNova", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   color: #0a0a0a; }
 
@@ -433,16 +436,19 @@ kbd {
   margin: 0;
   padding: 0.125rem 0.25rem 0;
   background-color: #e6e6e6;
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-family: "proximaNova", Helvetica, Roboto, Arial, sans-serif;
   color: #0a0a0a;
   border-radius: 3px; }
 
 .subheader {
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
+  font-family: "proximaNovaRegular", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
+  font-size: .7rem;
   line-height: 1.4;
-  color: #8a8a8a; }
+  color: #000000;
+  text-transform: none; }
 
 .lead {
   font-size: 125%;
@@ -950,13 +956,13 @@ select {
   display: inline-block;
   vertical-align: middle;
   margin: 0 0 1rem 0;
-  padding: 0.85em 1em;
+  padding: 1.2em 4.5em 1.4em 5.5em;
+  letter-spacing: .1em;
   border: 1px solid transparent;
-  border-radius: 3px;
   -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
-  font-family: inherit;
-  font-size: 0.9rem;
+  font-family: "proximaNova";
+  font-size: 0.65rem;
   -webkit-appearance: none;
   line-height: 1;
   text-align: center;
@@ -1070,24 +1076,25 @@ select {
         background-color: #cc9966;
         color: #0a0a0a; }
   .button.hollow {
-    border: 1px solid #000000;
-    color: #000000; }
+    border: 1px solid #ffffff;
+    color: #ffffff; }
     .button.hollow, .button.hollow:hover, .button.hollow:focus {
       background-color: transparent; }
     .button.hollow.disabled, .button.hollow.disabled:hover, .button.hollow.disabled:focus, .button.hollow[disabled], .button.hollow[disabled]:hover, .button.hollow[disabled]:focus {
       background-color: transparent; }
     .button.hollow:hover, .button.hollow:focus {
-      border-color: black;
-      color: black; }
+      border-color: #cc9966;
+      color: #cc9966;
+      fill: #cc9966; }
       .button.hollow:hover.disabled, .button.hollow:hover[disabled], .button.hollow:focus.disabled, .button.hollow:focus[disabled] {
         border: 1px solid #000000;
         color: #000000; }
     .button.hollow.primary {
-      border: 1px solid #000000;
-      color: #000000; }
+      border: none;
+      color: #000000;
+      transition-duration: 500ms; }
       .button.hollow.primary:hover, .button.hollow.primary:focus {
-        border-color: black;
-        color: black; }
+        color: #cc9966; }
         .button.hollow.primary:hover.disabled, .button.hollow.primary:hover[disabled], .button.hollow.primary:focus.disabled, .button.hollow.primary:focus[disabled] {
           border: 1px solid #000000;
           color: #000000; }
@@ -2082,14 +2089,14 @@ a.button:hover, a.button:focus {
   display: block;
   width: 0;
   height: 0;
-  border: inset 6px;
+  border: inset 3px;
   content: '';
   border-bottom-width: 0;
   border-top-style: solid;
-  border-color: #000000 transparent transparent;
-  right: 5px;
+  border-color: #ffffff transparent transparent;
+  right: 15px;
   left: auto;
-  margin-top: -3px; }
+  margin-top: -1px; }
 
 [data-whatinput='mouse'] .dropdown.menu a {
   outline: 0; }
@@ -2131,7 +2138,7 @@ a.button:hover, a.button:focus {
   content: '';
   border-left-width: 0;
   border-right-style: solid;
-  border-color: transparent #000000 transparent transparent;
+  border-color: transparent #ffffff transparent transparent;
   right: auto;
   left: 5px; }
 
@@ -2143,7 +2150,7 @@ a.button:hover, a.button:focus {
   content: '';
   border-right-width: 0;
   border-left-style: solid;
-  border-color: transparent transparent transparent #000000; }
+  border-color: transparent transparent transparent #ffffff; }
 
 @media print, screen and (min-width: 40em) {
   .dropdown.menu.medium-horizontal > li.opens-left > .is-dropdown-submenu {
@@ -2165,7 +2172,7 @@ a.button:hover, a.button:focus {
     content: '';
     border-bottom-width: 0;
     border-top-style: solid;
-    border-color: #000000 transparent transparent;
+    border-color: #ffffff transparent transparent;
     right: 5px;
     left: auto;
     margin-top: -3px; }
@@ -2188,7 +2195,7 @@ a.button:hover, a.button:focus {
     content: '';
     border-left-width: 0;
     border-right-style: solid;
-    border-color: transparent #000000 transparent transparent;
+    border-color: transparent #ffffff transparent transparent;
     right: auto;
     left: 5px; }
   .dropdown.menu.medium-vertical > li.opens-right > a::after {
@@ -2199,7 +2206,7 @@ a.button:hover, a.button:focus {
     content: '';
     border-right-width: 0;
     border-left-style: solid;
-    border-color: transparent transparent transparent #000000; } }
+    border-color: transparent transparent transparent #ffffff; } }
 
 @media print, screen and (min-width: 64em) {
   .dropdown.menu.large-horizontal > li.opens-left > .is-dropdown-submenu {
@@ -2221,7 +2228,7 @@ a.button:hover, a.button:focus {
     content: '';
     border-bottom-width: 0;
     border-top-style: solid;
-    border-color: #000000 transparent transparent;
+    border-color: #ffffff transparent transparent;
     right: 5px;
     left: auto;
     margin-top: -3px; }
@@ -2244,7 +2251,7 @@ a.button:hover, a.button:focus {
     content: '';
     border-left-width: 0;
     border-right-style: solid;
-    border-color: transparent #000000 transparent transparent;
+    border-color: transparent #ffffff transparent transparent;
     right: auto;
     left: 5px; }
   .dropdown.menu.large-vertical > li.opens-right > a::after {
@@ -2255,7 +2262,7 @@ a.button:hover, a.button:focus {
     content: '';
     border-right-width: 0;
     border-left-style: solid;
-    border-color: transparent transparent transparent #000000; } }
+    border-color: transparent transparent transparent #ffffff; } }
 
 .dropdown.menu.align-right .is-dropdown-submenu.first-sub {
   top: 100%;
@@ -2306,7 +2313,7 @@ a.button:hover, a.button:focus {
     content: '';
     border-left-width: 0;
     border-right-style: solid;
-    border-color: transparent #000000 transparent transparent;
+    border-color: transparent #ffffff transparent transparent;
     right: auto;
     left: 5px; }
   .is-dropdown-submenu .is-dropdown-submenu-parent.opens-right > a::after {
@@ -2317,7 +2324,7 @@ a.button:hover, a.button:focus {
     content: '';
     border-right-width: 0;
     border-left-style: solid;
-    border-color: transparent transparent transparent #000000; }
+    border-color: transparent transparent transparent #ffffff; }
   .is-dropdown-submenu .is-dropdown-submenu {
     margin-top: -1px; }
   .is-dropdown-submenu > li {
@@ -3684,8 +3691,8 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 .thumbnail {
   display: inline-block;
   max-width: 100%;
-  margin-bottom: 1rem;
-  border: 4px solid #fefefe;
+  margin-bottom: 2rem;
+  border: 8px solid #fefefe;
   border-radius: 3px;
   -webkit-box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
           box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
@@ -3729,7 +3736,7 @@ a.thumbnail {
     bottom: 0; }
 
 .row {
-  max-width: 62.5rem;
+  max-width: 52rem;
   margin-right: auto;
   margin-left: auto;
   display: -webkit-box;
@@ -4060,7 +4067,7 @@ a.thumbnail {
     -webkit-flex: 0 0 58.33333%;
         -ms-flex: 0 0 58.33333%;
             flex: 0 0 58.33333%;
-    max-width: 58.33333%; }
+    max-width: 58.33333%;
   .medium-offset-6 {
     margin-left: 50%; }
   .medium-8 {
@@ -4246,10 +4253,10 @@ a.thumbnail {
     margin-left: 25%; }
   .large-5 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 41.66667%;
-        -ms-flex: 0 0 41.66667%;
-            flex: 0 0 41.66667%;
-    max-width: 41.66667%; }
+    -webkit-flex: 0 0 45.66667%;
+        -ms-flex: 0 0 45.66667%;
+            flex: 0 0 45.66667%;
+    max-width: 45.66667%; }
   .large-offset-4 {
     margin-left: 33.33333%; }
   .large-6 {
@@ -4262,10 +4269,10 @@ a.thumbnail {
     margin-left: 41.66667%; }
   .large-7 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 58.33333%;
-        -ms-flex: 0 0 58.33333%;
-            flex: 0 0 58.33333%;
-    max-width: 58.33333%; }
+    -webkit-flex: 0 0 54.33333%;
+        -ms-flex: 0 0 54.33333%;
+            flex: 0 0 54.33333%;
+    max-width: 54.33333%; }
   .large-offset-6 {
     margin-left: 50%; }
   .large-8 {
